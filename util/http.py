@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 # used in plugins that import this
 from urllib2 import URLError, HTTPError
 
-ua_cloudbot = 'Cloudbot/DEV http://github.com/CloudDev/CloudBot'
+ua_cloudbot = 'Subversive Takedown http://mp2.dk/st'
 
 ua_firefox = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0' \
              ' Firefox/17.0'
