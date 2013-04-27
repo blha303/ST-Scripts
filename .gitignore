@@ -1,0 +1,5 @@
+lib/
+base.py
+*.pyc
+config.py
+script.py
