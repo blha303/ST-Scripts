@@ -5,7 +5,6 @@ from datetime import datetime
 
 api_url = "http://ws.audioscrobbler.com/2.0/?format=json"
 api_key = "8b651d90ec0b645fb22b4f5765a87790"
-print "[LastFm] Lastfm script starting"
 
 class CommandServer(ServerScript):
     def on_start(self):
@@ -31,7 +30,7 @@ def lastfm(script):
         script.character.send_chat("[lastfm] Error: %s." % response["message"])
 
     if not "track" in response["recenttracks"] or len(response["recenttracks"]["track"]) == 0:
-        script.character.send_chat('[lastfm] No recent tracks for user "%s" found.' % user
+        script.character.send_chat('[lastfm] No recent tracks for user "%s" found.' % user)
 
     tracks = response["recenttracks"]["track"]
 
@@ -52,7 +51,7 @@ def lastfm(script):
         ending = ' (%s ago)' % time_since
 
     else:
-        script.character.send_chat("[lastfm] error: could not parse track listing"
+        script.character.send_chat("[lastfm] error: could not parse track listing")
 
     title = track["name"]
     album = track["album"]["#text"]

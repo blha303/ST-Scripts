@@ -19,3 +19,5 @@ def shorten(script, one):
         script.character.send_chat("[shorten] " + web.isgd(one))
     except (web.ShortenError, http.HTTPError) as error:
         script.character.send_chat("/shorten: " + error)
+
+print "[Shorten] Link shortener script loaded"
