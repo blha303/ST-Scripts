@@ -18,5 +18,4 @@ def shorten(script, one):
     try:
         script.character.send_chat("[shorten] " + web.isgd(one))
     except (web.ShortenError, http.HTTPError) as error:
-        script.character.send_chat("[Shorten] An error occurred.")
-        self.server.send_chat(error)
+        script.character.send_chat("/shorten: " + error)
